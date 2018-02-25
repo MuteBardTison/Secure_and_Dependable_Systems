@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -O0 -Wall -W -fprofile-arcs -ftest-coverage -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fprofile-arcs -ftest-coverage CMakeFiles/check-stack.dir/check-stack.c.o  -o check-stack ../src/libstack.a -lcheck 
+/usr/bin/cc  -g -O0 -Wall -W -fprofile-arcs -ftest-coverage  -fprofile-arcs -ftest-coverage CMakeFiles/check-stack.dir/check-stack.c.o  -o check-stack -rdynamic ../src/libstack.a -lcheck_pic -lrt -lm -lsubunit -lpthread 

@@ -1,0 +1,20 @@
+Start testing: Feb 25 22:30 CET
+----------------------------------------------------------
+1/1 Testing: misc
+1/1 Test: misc
+Command: "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/stack/build/test/check-stack"
+Directory: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/stack/build
+"misc" start time: Feb 25 22:30 CET
+Output:
+----------------------------------------------------------
+Running suite(s): all
+100%: Checks: 1, Failures: 0, Errors: 0
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"misc" end time: Feb 25 22:30 CET
+"misc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 25 22:30 CET

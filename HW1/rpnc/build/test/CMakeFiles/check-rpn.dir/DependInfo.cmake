@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/Tison/Desktop/rpnc/test/check-rpn.c" "/Users/Tison/Desktop/rpnc/build/test/CMakeFiles/check-rpn.dir/check-rpn.c.o"
+  "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/test/check-rpn.c" "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/test/CMakeFiles/check-rpn.dir/check-rpn.c.o"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
@@ -15,7 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/Tison/Desktop/rpnc/build/src/CMakeFiles/rpn.dir/DependInfo.cmake"
+  "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/src/CMakeFiles/rpn.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

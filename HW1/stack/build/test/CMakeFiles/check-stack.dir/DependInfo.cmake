@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/Tison/Desktop/stack/test/check-stack.c" "/Users/Tison/Desktop/stack/build/test/CMakeFiles/check-stack.dir/check-stack.c.o"
+  "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/stack/test/check-stack.c" "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/stack/build/test/CMakeFiles/check-stack.dir/check-stack.c.o"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
@@ -15,7 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/Tison/Desktop/stack/build/src/CMakeFiles/stack.dir/DependInfo.cmake"
+  "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/stack/build/src/CMakeFiles/stack.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

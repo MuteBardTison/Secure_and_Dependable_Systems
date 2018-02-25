@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/Tison/Desktop/stack/src/stack.c" "/Users/Tison/Desktop/stack/build/src/CMakeFiles/stack.dir/stack.c.o"
+  "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/stack/src/stack.c" "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/stack/build/src/CMakeFiles/stack.dir/stack.c.o"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

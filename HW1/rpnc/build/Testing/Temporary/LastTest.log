@@ -1,0 +1,25 @@
+Start testing: Feb 25 23:19 CET
+----------------------------------------------------------
+1/1 Testing: misc
+1/1 Test: misc
+Command: "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/test/check-rpn"
+Directory: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build
+"misc" start time: Feb 25 23:19 CET
+Output:
+----------------------------------------------------------
+Running suite(s): all
+rpnc: invalid token 'foo'
+rpnc: missing operand
+rpnc: missing operand
+rpnc: missing operator
+rpnc: missing operator
+100%: Checks: 3, Failures: 0, Errors: 0
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"misc" end time: Feb 25 23:19 CET
+"misc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 25 23:19 CET

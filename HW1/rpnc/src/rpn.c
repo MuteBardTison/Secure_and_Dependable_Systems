@@ -107,7 +107,9 @@ int rpn_eval(char *token[], char **result) {
     }
     char* resultptr = (char*)malloc(s->elemSize);
     resultptr = memmove(resultptr, stack_pop(s), s->elemSize);
-    strcat(*result, resultptr);
+	//printf("returned%s\n", resultptr);
+    strcpy(*result, resultptr);
+	//printf("last%s\n", *result);
     free(resultptr);    
     stack_del(s);
     return RPN_OK;

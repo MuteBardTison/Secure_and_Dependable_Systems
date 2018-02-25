@@ -13,6 +13,8 @@ START_TEST(test_stack)
 {
     Stack * s;
     s = stack_new();
+    ck_assert_msg(stack_peek(s) == NULL, NULL);
+    ck_assert_msg(stack_pop(s) == NULL, NULL);
     for(int i = 0; i < kNumbers_of_element; i++) {
         int * itr = (int* )malloc(sizeof(int));
         itr = &i;
@@ -28,8 +30,6 @@ START_TEST(test_stack)
         free(peek);
         free(pop);
     }
-    //ck_assert_msg(stack_peek(s) == NULL, NULL);
-    //ck_assert_msg(stack_pop(s) == NULL, NULL);
     stack_del(s);
 }
 END_TEST

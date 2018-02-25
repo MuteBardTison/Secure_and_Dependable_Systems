@@ -8,12 +8,41 @@
 #include "../src/stack.h"
 #include "../src/rpn.h"
 
+const int kNumbers_of_element = 100;
+
+START_TEST(test_stack)
+{
+    Stack * s;
+    s = stack_new();
+    ck_assert_msg(stack_peek(s) == NULL, NULL);
+    ck_assert_msg(stack_pop(s) == NULL, NULL);
+    for(int i = 0; i < kNumbers_of_element; i++) {
+        int * itr = (int* )malloc(sizeof(int));
+        itr = &i;
+        stack_push(s, itr);
+    }
+    while(!stack_empty(s)) {
+        int* peek = (int*)malloc(sizeof(int));
+		peek = stack_peek(s);
+        ck_assert_int_eq(*peek, s->top);
+        int* pop = (int*)malloc(sizeof(int));
+		pop = stack_pop(s);
+        ck_assert_int_eq(*pop, s->top + 1);
+        free(peek);
+        free(pop);
+    }
+    stack_del(s);
+}
+END_TEST
+
 START_TEST(test_rpn)
 {
     char* tests[][10] = {
         {"42", NULL},
         {"2", "3", "+", NULL},
         {"2", "3", "*", NULL},
+		{"2", "1", "-", NULL},
+		{"4", "2", "/", NULL},
         {"2", "3", "+", "2", "*", NULL}
     };
 
@@ -21,6 +50,8 @@ START_TEST(test_rpn)
         "42",
         "5",
         "6",
+		"1",
+		"2",
         "10"
     };
 
@@ -70,16 +101,19 @@ static Suite*
 gdb_suite(void)
 {
     Suite *s;
-    TCase *tc_rpn, *tc_rpn_err;
+    TCase *tc_rpn, *tc_rpn_err, *tc_stack;
 
     s = suite_create("all");
     tc_rpn = tcase_create("rpn");
     tc_rpn_err = tcase_create("rpn_err");
+	tc_stack = tcase_create("stack");
 
     tcase_add_test(tc_rpn, test_rpn);
     suite_add_tcase(s, tc_rpn);
     tcase_add_test(tc_rpn_err, test_rpn_err);
     suite_add_tcase(s, tc_rpn_err);
+	tcase_add_test(tc_stack, test_stack);
+    suite_add_tcase(s, tc_stack);
     return s;
 }
 

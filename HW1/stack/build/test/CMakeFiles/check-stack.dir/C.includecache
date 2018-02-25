@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/Tison/Desktop/stack/src/stack.h
+/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/stack/src/stack.h
 stdio.h
 -
 stdlib.h
 -
 
-/Users/Tison/Desktop/stack/test/check-stack.c
+/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/stack/test/check-stack.c
 stdlib.h
 -
 check.h
 -
 ../src/stack.h
-/Users/Tison/Desktop/stack/src/stack.h
+/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/stack/src/stack.h
 
