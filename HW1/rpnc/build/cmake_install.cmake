@@ -1,4 +1,4 @@
-# Install script for directory: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc
+# Install script for directory: /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,15 +27,10 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
-
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/src/cmake_install.cmake")
-  include("/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/test/cmake_install.cmake")
+  include("/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/src/cmake_install.cmake")
+  include("/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/test/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +42,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

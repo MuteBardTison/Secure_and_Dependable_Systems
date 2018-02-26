@@ -74,7 +74,8 @@ START_TEST(test_rpn_err)
         {"-", NULL},
         {"2", "+", NULL},
         {"2", "4", NULL},
-        {"2", "4", "6", NULL}
+        {"2", "4", "6", NULL},
+        {"2", "0", "/", NULL}
     };
 
     int results[] = {
@@ -83,7 +84,8 @@ START_TEST(test_rpn_err)
         -2,
         -2,
         -3,
-        -3
+        -3,
+        -4
     };
 
     for (size_t i = 0; i < sizeof(tests)/sizeof(tests[0]); i++) {

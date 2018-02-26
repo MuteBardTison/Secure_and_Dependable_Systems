@@ -1,8 +1,8 @@
-The system is: Linux - 4.10.0-42-generic - x86_64
+The system is: Darwin - 16.7.0 - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
 Build flags: 
-Id flags: 
+Id flags:  
 
 The output was:
 0
@@ -10,147 +10,103 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
+The C compiler identification is AppleClang, found in "/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/3.8.0/CompilerIdC/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8227f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8227f.dir/build.make CMakeFiles/cmTC_8227f.dir/build
-make[1]: Entering directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8227f.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_8227f.dir/testCCompiler.c.o   -c /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_8227f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8227f.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_8227f.dir/testCCompiler.c.o  -o cmTC_8227f -rdynamic 
-make[1]: Leaving directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_68507/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_68507.dir/build.make CMakeFiles/cmTC_68507.dir/build
+Building C object CMakeFiles/cmTC_68507.dir/testCCompiler.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_68507.dir/testCCompiler.c.o   -c /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_68507
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68507.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_68507.dir/testCCompiler.c.o  -o cmTC_68507 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1553f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1553f.dir/build.make CMakeFiles/cmTC_1553f.dir/build
-make[1]: Entering directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1553f.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_1553f.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_1553f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1553f.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_1553f.dir/CMakeCCompilerABI.c.o  -o cmTC_1553f -rdynamic  
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.9' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Run Build Command:"/usr/bin/make" "cmTC_bfc7b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_bfc7b.dir/build.make CMakeFiles/cmTC_bfc7b.dir/build
+Building C object CMakeFiles/cmTC_bfc7b.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_bfc7b.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-3.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_bfc7b
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfc7b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_bfc7b.dir/CMakeCCompilerABI.c.o  -o cmTC_bfc7b 
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin16.7.0
 Thread model: posix
-gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1553f' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQw9ft4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1553f /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1553f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.12.0 -o cmTC_bfc7b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_bfc7b.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-305
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1553f/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1553f.dir/build.make CMakeFiles/cmTC_1553f.dir/build]
-  ignore line: [make[1]: Entering directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_1553f.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_1553f.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_1553f]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1553f.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_1553f.dir/CMakeCCompilerABI.c.o  -o cmTC_1553f -rdynamic  ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.9' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_bfc7b/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_bfc7b.dir/build.make CMakeFiles/cmTC_bfc7b.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_bfc7b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_bfc7b.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-3.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_bfc7b]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfc7b.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_bfc7b.dir/CMakeCCompilerABI.c.o  -o cmTC_bfc7b ]
+  ignore line: [Apple LLVM version 9.0.0 (clang-900.0.39.2)]
+  ignore line: [Target: x86_64-apple-darwin16.7.0]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1553f' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQw9ft4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1553f /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1553f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccQw9ft4.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--sysroot=/] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-export-dynamic] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-zrelro] ==> ignore
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.12.0 -o cmTC_bfc7b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_bfc7b.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.12.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1553f] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_1553f.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [-lc] ==> lib [c]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  remove lib [gcc]
-  remove lib [gcc_s]
-  remove lib [gcc]
-  remove lib [gcc_s]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
-  implicit libs: [c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
-  implicit fwks: []
+    arg [cmTC_bfc7b] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_bfc7b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: []
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_87d3c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_87d3c.dir/build.make CMakeFiles/cmTC_87d3c.dir/build
-make[1]: Entering directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_87d3c.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_87d3c.dir/feature_tests.c.o   -c /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_87d3c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87d3c.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_87d3c.dir/feature_tests.c.o  -o cmTC_87d3c -rdynamic 
-make[1]: Leaving directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_91dcd/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_91dcd.dir/build.make CMakeFiles/cmTC_91dcd.dir/build
+Building C object CMakeFiles/cmTC_91dcd.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_91dcd.dir/feature_tests.c.o   -c /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_91dcd
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91dcd.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_91dcd.dir/feature_tests.c.o  -o cmTC_91dcd 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -160,17 +116,15 @@ make[1]: Leaving directory '/home/tison/Desktop/Secure_and_Dependable_Systems-ma
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_eb353/fast"
-/usr/bin/make -f CMakeFiles/cmTC_eb353.dir/build.make CMakeFiles/cmTC_eb353.dir/build
-make[1]: Entering directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_eb353.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_eb353.dir/feature_tests.c.o   -c /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_eb353
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb353.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_eb353.dir/feature_tests.c.o  -o cmTC_eb353 -rdynamic 
-make[1]: Leaving directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a7ede/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a7ede.dir/build.make CMakeFiles/cmTC_a7ede.dir/build
+Building C object CMakeFiles/cmTC_a7ede.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_a7ede.dir/feature_tests.c.o   -c /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_a7ede
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7ede.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a7ede.dir/feature_tests.c.o  -o cmTC_a7ede 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -180,17 +134,15 @@ make[1]: Leaving directory '/home/tison/Desktop/Secure_and_Dependable_Systems-ma
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_59814/fast"
-/usr/bin/make -f CMakeFiles/cmTC_59814.dir/build.make CMakeFiles/cmTC_59814.dir/build
-make[1]: Entering directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_59814.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_59814.dir/feature_tests.c.o   -c /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_59814
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59814.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_59814.dir/feature_tests.c.o  -o cmTC_59814 -rdynamic 
-make[1]: Leaving directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_87cfe/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_87cfe.dir/build.make CMakeFiles/cmTC_87cfe.dir/build
+Building C object CMakeFiles/cmTC_87cfe.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_87cfe.dir/feature_tests.c.o   -c /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_87cfe
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87cfe.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_87cfe.dir/feature_tests.c.o  -o cmTC_87cfe 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -198,30 +150,40 @@ make[1]: Leaving directory '/home/tison/Desktop/Secure_and_Dependable_Systems-ma
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_05751/fast"
-/usr/bin/make -f CMakeFiles/cmTC_05751.dir/build.make CMakeFiles/cmTC_05751.dir/build
-make[1]: Entering directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_05751.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -g -O0 -Wall -W -fprofile-arcs -ftest-coverage    -o CMakeFiles/cmTC_05751.dir/CheckIncludeFile.c.o   -c /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_05751
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05751.dir/link.txt --verbose=1
-/usr/bin/cc  -g -O0 -Wall -W -fprofile-arcs -ftest-coverage     CMakeFiles/cmTC_05751.dir/CheckIncludeFile.c.o  -o cmTC_05751 -rdynamic 
-make[1]: Leaving directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a81ea/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a81ea.dir/build.make CMakeFiles/cmTC_a81ea.dir/build
+Building C object CMakeFiles/cmTC_a81ea.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -g -O0 -Wall -W -fprofile-arcs -ftest-coverage    -o CMakeFiles/cmTC_a81ea.dir/CheckIncludeFile.c.o   -c /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a81ea
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a81ea.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -O0 -Wall -W -fprofile-arcs -ftest-coverage  -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a81ea.dir/CheckIncludeFile.c.o  -o cmTC_a81ea 
 
 
-Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fbd3c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fbd3c.dir/build.make CMakeFiles/cmTC_fbd3c.dir/build
-make[1]: Entering directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fbd3c.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -g -O0 -Wall -W -fprofile-arcs -ftest-coverage -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fbd3c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_fbd3c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbd3c.dir/link.txt --verbose=1
-/usr/bin/cc  -g -O0 -Wall -W -fprofile-arcs -ftest-coverage -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_fbd3c.dir/CheckFunctionExists.c.o  -o cmTC_fbd3c -rdynamic -lpthread 
-make[1]: Leaving directory '/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b01f0/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b01f0.dir/build.make CMakeFiles/cmTC_b01f0.dir/build
+Building C object CMakeFiles/cmTC_b01f0.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -g -O0 -Wall -W -fprofile-arcs -ftest-coverage    -o CMakeFiles/cmTC_b01f0.dir/CheckSymbolExists.c.o   -c /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b01f0
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b01f0.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -O0 -Wall -W -fprofile-arcs -ftest-coverage  -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b01f0.dir/CheckSymbolExists.c.o  -o cmTC_b01f0 
 
+File /Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
 

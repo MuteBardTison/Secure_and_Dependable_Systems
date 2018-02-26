@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/src/rpn.c
+/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/src/rpn.c
 stdio.h
 -
 stdlib.h
@@ -16,13 +16,13 @@ string.h
 ctype.h
 -
 stack.h
-/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/src/stack.h
+/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/src/stack.h
 rpn.h
-/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/src/rpn.h
+/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/src/rpn.h
 
-/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/src/rpn.h
+/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/src/rpn.h
 
-/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/src/stack.c
+/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/src/stack.c
 stdio.h
 -
 stdlib.h
@@ -30,9 +30,9 @@ stdlib.h
 string.h
 -
 stack.h
-/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/src/stack.h
+/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/src/stack.h
 
-/home/tison/Desktop/Secure_and_Dependable_Systems-master/HW1/rpnc/src/stack.h
+/Users/Tison/Desktop/2018Spring/Secure_and_Dependable_Systems/HW1/rpnc/src/stack.h
 stdio.h
 -
 stdlib.h

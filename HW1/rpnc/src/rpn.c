@@ -17,7 +17,9 @@ int rpn_eval(char *token[], char **result) {
     while(token[length] != NULL) length++;
     for(int i = 0; i < length; i++) {
         //test invalid token
-        int all_digit = 1, only_operator = 0, j = 0;
+        int all_digit = 1, only_operator = 0, j = 1;
+
+        j = 0;
         //check if is a number 
         while(token[i][j]) {
             if(!(strchr(digits, token[i][j]) != NULL))
@@ -99,6 +101,12 @@ int rpn_eval(char *token[], char **result) {
                 stack_pop(s);
                 v2 = stack_pop(s);
                 v1 = stack_pop(s);
+                //check denominator equal 0
+                if(strtol(v2, NULL, 10) == 0) {
+                    printf("Denominator cannot equal to 0\n");
+                    stack_del(s);
+                    return -4;
+                }
                 val = strtol(v1, NULL, 10) / strtol(v2, NULL, 10);
                 sprintf(r, "%d", val);
                 stack_push(s, r);
