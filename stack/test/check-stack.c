@@ -20,6 +20,22 @@ START_TEST(test_stack)
         itr = &i;
         stack_push(s, itr);
     }
+    char** ptr = (char**)malloc(sizeof(char*));
+    char* data = "test";
+    ptr = &data;
+    stack_push(s, ptr);
+
+    char** ptr_peek = (char**)malloc(sizeof(char*));
+    ptr_peek = stack_peek(s);
+    ck_assert_str_eq(*ptr_peek, "test");
+    free(ptr_peek);
+
+    char** ptr_pop = (char**)malloc(sizeof(char*));
+    ptr_pop = stack_pop(s);
+    ck_assert_str_eq(*ptr_pop, "test");
+    free(ptr_pop);
+    
+     
     while(!stack_empty(s)) {
         int* peek = (int*)malloc(sizeof(int));
 		peek = stack_peek(s);

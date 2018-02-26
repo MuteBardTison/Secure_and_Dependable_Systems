@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/tison/Downloads/stack/test/check-stack.c" "/home/tison/Downloads/stack/build/test/CMakeFiles/check-stack.dir/check-stack.c.o"
+  "/home/tison/Downloads/Secure_and_Dependable_Systems-master/stack/test/check-stack.c" "/home/tison/Downloads/Secure_and_Dependable_Systems-master/stack/build/test/CMakeFiles/check-stack.dir/check-stack.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/tison/Downloads/stack/build/src/CMakeFiles/stack.dir/DependInfo.cmake"
+  "/home/tison/Downloads/Secure_and_Dependable_Systems-master/stack/build/src/CMakeFiles/stack.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

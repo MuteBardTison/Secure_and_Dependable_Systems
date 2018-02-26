@@ -6,5 +6,5 @@ C_FLAGS = -g -O0 -Wall -W -fprofile-arcs -ftest-coverage   -Wall -Werror
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/tison/Downloads/stack/build/src 
+C_INCLUDES = -I/home/tison/Downloads/Secure_and_Dependable_Systems-master/stack/build/src 
 

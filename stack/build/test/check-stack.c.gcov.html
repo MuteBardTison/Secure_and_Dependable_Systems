@@ -31,13 +31,13 @@
             <td class="headerValue">app.info</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">32</td>
-            <td class="headerCovTableEntry">32</td>
+            <td class="headerCovTableEntry">44</td>
+            <td class="headerCovTableEntry">44</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2018-02-25 23:36:12</td>
+            <td class="headerValue">2018-02-26 00:03:29</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -82,49 +82,65 @@
 <span class="lineNum">      20 </span><span class="lineCov">        100 :         itr = &amp;i;</span>
 <span class="lineNum">      21 </span><span class="lineCov">        100 :         stack_push(s, itr);</span>
 <span class="lineNum">      22 </span>            :     }
-<span class="lineNum">      23 </span><span class="lineCov">        102 :     while(!stack_empty(s)) {</span>
-<span class="lineNum">      24 </span><span class="lineCov">        100 :         int* peek = (int*)malloc(sizeof(int));</span>
-<span class="lineNum">      25 </span><span class="lineCov">        100 :                 peek = stack_peek(s);</span>
-<span class="lineNum">      26 </span><span class="lineCov">        100 :         ck_assert_int_eq(*peek, s-&gt;top);</span>
-<span class="lineNum">      27 </span><span class="lineCov">        100 :         int* pop = (int*)malloc(sizeof(int));</span>
-<span class="lineNum">      28 </span><span class="lineCov">        100 :                 pop = stack_pop(s);</span>
-<span class="lineNum">      29 </span><span class="lineCov">        100 :         ck_assert_int_eq(*pop, s-&gt;top + 1);</span>
-<span class="lineNum">      30 </span><span class="lineCov">        100 :         free(peek);</span>
-<span class="lineNum">      31 </span><span class="lineCov">        100 :         free(pop);</span>
-<span class="lineNum">      32 </span>            :     }
-<span class="lineNum">      33 </span><span class="lineCov">          1 :     stack_del(s);</span>
-<span class="lineNum">      34 </span>            : }
-<span class="lineNum">      35 </span><span class="lineCov">          1 : END_TEST</span>
-<a name="36"><span class="lineNum">      36 </span>            : </a>
-<span class="lineNum">      37 </span>            : static Suite*
-<span class="lineNum">      38 </span><span class="lineCov">          2 : gdb_suite(void)</span>
-<span class="lineNum">      39 </span>            : {
-<span class="lineNum">      40 </span>            :     Suite *s;
-<span class="lineNum">      41 </span>            :     TCase *tc_stack;
-<span class="lineNum">      42 </span>            : 
-<span class="lineNum">      43 </span><span class="lineCov">          2 :     s = suite_create(&quot;all&quot;);</span>
-<span class="lineNum">      44 </span><span class="lineCov">          2 :     tc_stack = tcase_create(&quot;stack&quot;);</span>
-<span class="lineNum">      45 </span>            : 
-<span class="lineNum">      46 </span><span class="lineCov">          2 :     tcase_add_test(tc_stack, test_stack);</span>
-<span class="lineNum">      47 </span><span class="lineCov">          2 :     suite_add_tcase(s, tc_stack);</span>
-<span class="lineNum">      48 </span><span class="lineCov">          2 :     return s;</span>
-<a name="49"><span class="lineNum">      49 </span>            : }</a>
-<span class="lineNum">      50 </span>            : 
-<span class="lineNum">      51 </span><span class="lineCov">          2 : int main(void)</span>
-<span class="lineNum">      52 </span>            : {
-<span class="lineNum">      53 </span>            :     int number_failed;
-<span class="lineNum">      54 </span>            :     Suite *s;
-<span class="lineNum">      55 </span>            :     SRunner *sr;
-<span class="lineNum">      56 </span>            : 
-<span class="lineNum">      57 </span><span class="lineCov">          2 :     s = gdb_suite();</span>
-<span class="lineNum">      58 </span><span class="lineCov">          2 :     sr = srunner_create(s);</span>
-<span class="lineNum">      59 </span>            : 
-<span class="lineNum">      60 </span><span class="lineCov">          2 :     srunner_run_all(sr, CK_NORMAL);</span>
-<span class="lineNum">      61 </span><span class="lineCov">          1 :     number_failed = srunner_ntests_failed(sr);</span>
-<span class="lineNum">      62 </span><span class="lineCov">          1 :     srunner_free(sr);</span>
-<span class="lineNum">      63 </span><span class="lineCov">          1 :     return (number_failed == 0) ? EXIT_SUCCESS : EXIT_FAILURE;</span>
-<span class="lineNum">      64 </span>            : }
-<span class="lineNum">      65 </span>            : 
+<span class="lineNum">      23 </span><span class="lineCov">          1 :     char** ptr = (char**)malloc(sizeof(char*));</span>
+<span class="lineNum">      24 </span><span class="lineCov">          1 :     char* data = &quot;test&quot;;</span>
+<span class="lineNum">      25 </span><span class="lineCov">          1 :     ptr = &amp;data;</span>
+<span class="lineNum">      26 </span><span class="lineCov">          1 :     stack_push(s, ptr);</span>
+<span class="lineNum">      27 </span>            : 
+<span class="lineNum">      28 </span><span class="lineCov">          1 :     char** ptr_peek = (char**)malloc(sizeof(char*));</span>
+<span class="lineNum">      29 </span><span class="lineCov">          1 :     ptr_peek = stack_peek(s);</span>
+<span class="lineNum">      30 </span><span class="lineCov">          1 :     ck_assert_str_eq(*ptr_peek, &quot;test&quot;);</span>
+<span class="lineNum">      31 </span><span class="lineCov">          1 :     free(ptr_peek);</span>
+<span class="lineNum">      32 </span>            : 
+<span class="lineNum">      33 </span><span class="lineCov">          1 :     char** ptr_pop = (char**)malloc(sizeof(char*));</span>
+<span class="lineNum">      34 </span><span class="lineCov">          1 :     ptr_pop = stack_pop(s);</span>
+<span class="lineNum">      35 </span><span class="lineCov">          1 :     ck_assert_str_eq(*ptr_pop, &quot;test&quot;);</span>
+<span class="lineNum">      36 </span><span class="lineCov">          1 :     free(ptr_pop);</span>
+<span class="lineNum">      37 </span>            :     
+<span class="lineNum">      38 </span>            :      
+<span class="lineNum">      39 </span><span class="lineCov">        102 :     while(!stack_empty(s)) {</span>
+<span class="lineNum">      40 </span><span class="lineCov">        100 :         int* peek = (int*)malloc(sizeof(int));</span>
+<span class="lineNum">      41 </span><span class="lineCov">        100 :                 peek = stack_peek(s);</span>
+<span class="lineNum">      42 </span><span class="lineCov">        100 :         ck_assert_int_eq(*peek, s-&gt;top);</span>
+<span class="lineNum">      43 </span><span class="lineCov">        100 :         int* pop = (int*)malloc(sizeof(int));</span>
+<span class="lineNum">      44 </span><span class="lineCov">        100 :                 pop = stack_pop(s);</span>
+<span class="lineNum">      45 </span><span class="lineCov">        100 :         ck_assert_int_eq(*pop, s-&gt;top + 1);</span>
+<span class="lineNum">      46 </span><span class="lineCov">        100 :         free(peek);</span>
+<span class="lineNum">      47 </span><span class="lineCov">        100 :         free(pop);</span>
+<span class="lineNum">      48 </span>            :     }
+<span class="lineNum">      49 </span><span class="lineCov">          1 :     stack_del(s);</span>
+<span class="lineNum">      50 </span>            : }
+<span class="lineNum">      51 </span><span class="lineCov">          1 : END_TEST</span>
+<a name="52"><span class="lineNum">      52 </span>            : </a>
+<span class="lineNum">      53 </span>            : static Suite*
+<span class="lineNum">      54 </span><span class="lineCov">          2 : gdb_suite(void)</span>
+<span class="lineNum">      55 </span>            : {
+<span class="lineNum">      56 </span>            :     Suite *s;
+<span class="lineNum">      57 </span>            :     TCase *tc_stack;
+<span class="lineNum">      58 </span>            : 
+<span class="lineNum">      59 </span><span class="lineCov">          2 :     s = suite_create(&quot;all&quot;);</span>
+<span class="lineNum">      60 </span><span class="lineCov">          2 :     tc_stack = tcase_create(&quot;stack&quot;);</span>
+<span class="lineNum">      61 </span>            : 
+<span class="lineNum">      62 </span><span class="lineCov">          2 :     tcase_add_test(tc_stack, test_stack);</span>
+<span class="lineNum">      63 </span><span class="lineCov">          2 :     suite_add_tcase(s, tc_stack);</span>
+<span class="lineNum">      64 </span><span class="lineCov">          2 :     return s;</span>
+<a name="65"><span class="lineNum">      65 </span>            : }</a>
+<span class="lineNum">      66 </span>            : 
+<span class="lineNum">      67 </span><span class="lineCov">          2 : int main(void)</span>
+<span class="lineNum">      68 </span>            : {
+<span class="lineNum">      69 </span>            :     int number_failed;
+<span class="lineNum">      70 </span>            :     Suite *s;
+<span class="lineNum">      71 </span>            :     SRunner *sr;
+<span class="lineNum">      72 </span>            : 
+<span class="lineNum">      73 </span><span class="lineCov">          2 :     s = gdb_suite();</span>
+<span class="lineNum">      74 </span><span class="lineCov">          2 :     sr = srunner_create(s);</span>
+<span class="lineNum">      75 </span>            : 
+<span class="lineNum">      76 </span><span class="lineCov">          2 :     srunner_run_all(sr, CK_NORMAL);</span>
+<span class="lineNum">      77 </span><span class="lineCov">          1 :     number_failed = srunner_ntests_failed(sr);</span>
+<span class="lineNum">      78 </span><span class="lineCov">          1 :     srunner_free(sr);</span>
+<span class="lineNum">      79 </span><span class="lineCov">          1 :     return (number_failed == 0) ? EXIT_SUCCESS : EXIT_FAILURE;</span>
+<span class="lineNum">      80 </span>            : }
+<span class="lineNum">      81 </span>            : 
 </pre>
       </td>
     </tr>

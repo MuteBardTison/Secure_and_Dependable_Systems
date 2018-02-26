@@ -1,10 +1,10 @@
-Start testing: Feb 25 23:35 CET
+Start testing: Feb 26 00:03 CET
 ----------------------------------------------------------
 1/1 Testing: misc
 1/1 Test: misc
-Command: "/home/tison/Downloads/stack/build/test/check-stack"
-Directory: /home/tison/Downloads/stack/build
-"misc" start time: Feb 25 23:35 CET
+Command: "/home/tison/Downloads/Secure_and_Dependable_Systems-master/stack/build/test/check-stack"
+Directory: /home/tison/Downloads/Secure_and_Dependable_Systems-master/stack/build
+"misc" start time: Feb 26 00:03 CET
 Output:
 ----------------------------------------------------------
 Running suite(s): all
@@ -13,8 +13,8 @@ Running suite(s): all
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"misc" end time: Feb 25 23:35 CET
+"misc" end time: Feb 26 00:03 CET
 "misc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Feb 25 23:35 CET
+End testing: Feb 26 00:03 CET

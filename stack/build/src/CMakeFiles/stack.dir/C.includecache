@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tison/Downloads/stack/src/stack.c
+/home/tison/Downloads/Secure_and_Dependable_Systems-master/stack/src/stack.c
 stdio.h
 -
 stdlib.h
@@ -14,9 +14,9 @@ stdlib.h
 string.h
 -
 stack.h
-/home/tison/Downloads/stack/src/stack.h
+/home/tison/Downloads/Secure_and_Dependable_Systems-master/stack/src/stack.h
 
-/home/tison/Downloads/stack/src/stack.h
+/home/tison/Downloads/Secure_and_Dependable_Systems-master/stack/src/stack.h
 stdio.h
 -
 stdlib.h
