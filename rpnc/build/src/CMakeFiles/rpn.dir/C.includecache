@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/rpn.c
+/home/tison/Downloads/rpnc/src/rpn.c
 stdio.h
 -
 stdlib.h
@@ -16,13 +16,13 @@ string.h
 ctype.h
 -
 stack.h
-/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.h
+/home/tison/Downloads/rpnc/src/stack.h
 rpn.h
-/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/rpn.h
+/home/tison/Downloads/rpnc/src/rpn.h
 
-/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/rpn.h
+/home/tison/Downloads/rpnc/src/rpn.h
 
-/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.c
+/home/tison/Downloads/rpnc/src/stack.c
 stdio.h
 -
 stdlib.h
@@ -30,9 +30,9 @@ stdlib.h
 string.h
 -
 stack.h
-/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.h
+/home/tison/Downloads/rpnc/src/stack.h
 
-/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.h
+/home/tison/Downloads/rpnc/src/stack.h
 stdio.h
 -
 stdlib.h

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc
+CMAKE_SOURCE_DIR = /home/tison/Downloads/rpnc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build
+CMAKE_BINARY_DIR = /home/tison/Downloads/rpnc/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/rpn.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/rpn.dir/flags.make
 
 src/CMakeFiles/rpn.dir/rpn.c.o: src/CMakeFiles/rpn.dir/flags.make
 src/CMakeFiles/rpn.dir/rpn.c.o: ../src/rpn.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/rpn.dir/rpn.c.o"
-	cd /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rpn.dir/rpn.c.o   -c /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/rpn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tison/Downloads/rpnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/rpn.dir/rpn.c.o"
+	cd /home/tison/Downloads/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rpn.dir/rpn.c.o   -c /home/tison/Downloads/rpnc/src/rpn.c
 
 src/CMakeFiles/rpn.dir/rpn.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpn.dir/rpn.c.i"
-	cd /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/rpn.c > CMakeFiles/rpn.dir/rpn.c.i
+	cd /home/tison/Downloads/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tison/Downloads/rpnc/src/rpn.c > CMakeFiles/rpn.dir/rpn.c.i
 
 src/CMakeFiles/rpn.dir/rpn.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpn.dir/rpn.c.s"
-	cd /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/rpn.c -o CMakeFiles/rpn.dir/rpn.c.s
+	cd /home/tison/Downloads/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tison/Downloads/rpnc/src/rpn.c -o CMakeFiles/rpn.dir/rpn.c.s
 
 src/CMakeFiles/rpn.dir/rpn.c.o.requires:
 
@@ -83,16 +83,16 @@ src/CMakeFiles/rpn.dir/rpn.c.o.provides.build: src/CMakeFiles/rpn.dir/rpn.c.o
 
 src/CMakeFiles/rpn.dir/stack.c.o: src/CMakeFiles/rpn.dir/flags.make
 src/CMakeFiles/rpn.dir/stack.c.o: ../src/stack.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/rpn.dir/stack.c.o"
-	cd /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rpn.dir/stack.c.o   -c /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tison/Downloads/rpnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/rpn.dir/stack.c.o"
+	cd /home/tison/Downloads/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rpn.dir/stack.c.o   -c /home/tison/Downloads/rpnc/src/stack.c
 
 src/CMakeFiles/rpn.dir/stack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpn.dir/stack.c.i"
-	cd /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.c > CMakeFiles/rpn.dir/stack.c.i
+	cd /home/tison/Downloads/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tison/Downloads/rpnc/src/stack.c > CMakeFiles/rpn.dir/stack.c.i
 
 src/CMakeFiles/rpn.dir/stack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpn.dir/stack.c.s"
-	cd /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.c -o CMakeFiles/rpn.dir/stack.c.s
+	cd /home/tison/Downloads/rpnc/build/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tison/Downloads/rpnc/src/stack.c -o CMakeFiles/rpn.dir/stack.c.s
 
 src/CMakeFiles/rpn.dir/stack.c.o.requires:
 
@@ -117,9 +117,9 @@ src/librpn.a: src/CMakeFiles/rpn.dir/rpn.c.o
 src/librpn.a: src/CMakeFiles/rpn.dir/stack.c.o
 src/librpn.a: src/CMakeFiles/rpn.dir/build.make
 src/librpn.a: src/CMakeFiles/rpn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library librpn.a"
-	cd /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/rpn.dir/cmake_clean_target.cmake
-	cd /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rpn.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tison/Downloads/rpnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library librpn.a"
+	cd /home/tison/Downloads/rpnc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/rpn.dir/cmake_clean_target.cmake
+	cd /home/tison/Downloads/rpnc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rpn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/rpn.dir/build: src/librpn.a
@@ -132,10 +132,10 @@ src/CMakeFiles/rpn.dir/requires: src/CMakeFiles/rpn.dir/stack.c.o.requires
 .PHONY : src/CMakeFiles/rpn.dir/requires
 
 src/CMakeFiles/rpn.dir/clean:
-	cd /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/rpn.dir/cmake_clean.cmake
+	cd /home/tison/Downloads/rpnc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/rpn.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/rpn.dir/clean
 
 src/CMakeFiles/rpn.dir/depend:
-	cd /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src/CMakeFiles/rpn.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tison/Downloads/rpnc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tison/Downloads/rpnc /home/tison/Downloads/rpnc/src /home/tison/Downloads/rpnc/build /home/tison/Downloads/rpnc/build/src /home/tison/Downloads/rpnc/build/src/CMakeFiles/rpn.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/rpn.dir/depend
 

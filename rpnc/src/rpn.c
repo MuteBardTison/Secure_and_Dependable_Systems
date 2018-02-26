@@ -17,22 +17,21 @@ int rpn_eval(char *token[], char **result) {
     while(token[length] != NULL) length++;
     for(int i = 0; i < length; i++) {
         //test invalid token
-        int all_digit = 1, only_operator = 0, j = 1;
-
-        j = 0;
+        int all_digit = 1, only_operator = 0;
+        
+        //check if is a number 
+        int j = 0;
         //check if is a number 
         while(token[i][j]) {
             if(!(strchr(digits, token[i][j]) != NULL))
                 all_digit = 0;
             j++;
         }
+
         //check if is an operator
         if(strchr(operator, token[i][0]) != NULL && token[i][1] == '\0')
             only_operator = 1;
-        if(length == 1 && all_digit == 1 && only_operator == 0) {
-            stack_push(s, token[i]);
-            break;
-        }
+        
         if(!(all_digit || only_operator)) {
             printf("rpnc: invalid token '%s'\n", token[i]);
             stack_del(s);
@@ -42,8 +41,8 @@ int rpn_eval(char *token[], char **result) {
 
         //test operand missing
         //operator in [0] or [1]
-        else if((strchr(operator, token[i][0]) != NULL && i == 0 )
-        || (strchr(operator, token[i][0]) != NULL && i == 1)) {
+        else if((strchr(operator, token[i][0]) != NULL && s->top == -1 )
+        || (strchr(operator, token[i][0]) != NULL && s->top == 0)) {
             printf("rpnc: missing operand\n");
             stack_del(s);
             return RPN_MISSING_OPERAND;
@@ -52,13 +51,13 @@ int rpn_eval(char *token[], char **result) {
 
         //test operator missing
         //1){"12", "23"}
-        else if(i == length - 1 && length == 2) {
+        else if(s->top == 0 && all_digit == 1 && i == length -1) {
             printf("rpnc: missing operator\n");
             stack_del(s);
             return RPN_MISSING_OPERATOR;
         }
         //2){"12", "23", "34"...}
-        else if(strchr(operator, token[i][0]) == NULL && i == 2) {
+        else if(s->top == 1 && all_digit == 1) {
             printf("rpnc: missing operator\n");
             stack_del(s);
             return RPN_MISSING_OPERATOR;
