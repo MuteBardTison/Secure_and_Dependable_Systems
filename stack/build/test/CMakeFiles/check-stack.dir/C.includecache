@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tison/Downloads/stack/src/stack.h
+stdio.h
+-
+stdlib.h
+-
+
+/home/tison/Downloads/stack/test/check-stack.c
+stdlib.h
+-
+check.h
+-
+../src/stack.h
+/home/tison/Downloads/stack/src/stack.h
+

@@ -1,0 +1,1 @@
+/usr/bin/cc  -g -O0 -Wall -W -fprofile-arcs -ftest-coverage  -fprofile-arcs -ftest-coverage CMakeFiles/check-rpn.dir/check-rpn.c.o  -o check-rpn -rdynamic ../src/librpn.a -lcheck_pic -lrt -lm -lsubunit -lpthread 

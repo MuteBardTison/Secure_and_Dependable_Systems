@@ -1,1 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -O0 -Wall -W -fprofile-arcs -ftest-coverage -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fprofile-arcs -ftest-coverage CMakeFiles/check-rpn.dir/check-rpn.c.o  -o check-rpn ../src/librpn.a -lcheck 

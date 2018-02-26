@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tison/Downloads/rpnc/src/rpn.h
+
+/home/tison/Downloads/rpnc/src/stack.h
+stdio.h
+-
+stdlib.h
+-
+
+/home/tison/Downloads/rpnc/test/check-rpn.c
+stdlib.h
+-
+check.h
+-
+../src/stack.h
+/home/tison/Downloads/rpnc/src/stack.h
+../src/rpn.h
+/home/tison/Downloads/rpnc/src/rpn.h
+
