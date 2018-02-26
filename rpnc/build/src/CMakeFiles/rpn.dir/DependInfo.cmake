@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/tison/Downloads/rpnc/src/rpn.c" "/home/tison/Downloads/rpnc/build/src/CMakeFiles/rpn.dir/rpn.c.o"
-  "/home/tison/Downloads/rpnc/src/stack.c" "/home/tison/Downloads/rpnc/build/src/CMakeFiles/rpn.dir/stack.c.o"
+  "/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/rpn.c" "/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src/CMakeFiles/rpn.dir/rpn.c.o"
+  "/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.c" "/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/build/src/CMakeFiles/rpn.dir/stack.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

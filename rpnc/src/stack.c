@@ -6,14 +6,14 @@
 #include <string.h>
 #include "stack.h"
 
-Stack* stack_new() {
-    Stack* s = (Stack*)malloc(sizeof(Stack));
+stack_t* stack_new() {
+    stack_t* s = (stack_t*)malloc(sizeof(stack_t));
     s->top = -1;
     s->data = malloc(sizeof(s->elemSize));
     return s;
 }
 
-void stack_push(Stack *s, void *data) {
+void stack_push(stack_t *s, void *data) {
     s->elemSize = sizeof(data);
     s->top++;
     s->data = realloc(s->data, (s->elemSize * s->top + 1));
@@ -21,11 +21,11 @@ void stack_push(Stack *s, void *data) {
     memmove(target, data, s->elemSize);
 }
 
-int stack_empty(Stack *s) {
+int stack_empty(stack_t *s) {
     return s->top == -1;
 }
 
-void* stack_pop(Stack *s) {
+void* stack_pop(stack_t *s) {
     if(stack_empty(s))
         return NULL;
     else {
@@ -38,7 +38,7 @@ void* stack_pop(Stack *s) {
     }
 }
 
-void* stack_peek(Stack *s) {
+void* stack_peek(stack_t *s) {
     if(stack_empty(s))
         return NULL;
     else {
@@ -49,7 +49,7 @@ void* stack_peek(Stack *s) {
     }
 }
 
-void stack_del(Stack *s) {
+void stack_del(stack_t *s) {
     free(s->data);
     free(s);
 }

@@ -1,5 +1,5 @@
 TN:
-SF:/home/tison/Downloads/rpnc/src/rpn.c
+SF:/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/rpn.c
 FN:12,rpn_eval
 FNDA:0,rpn_eval
 FNF:1
@@ -83,7 +83,7 @@ LF:75
 LH:0
 end_of_record
 TN:
-SF:/home/tison/Downloads/rpnc/src/stack.c
+SF:/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.c
 FN:9,stack_new
 FN:16,stack_push
 FN:24,stack_empty
@@ -136,7 +136,7 @@ LF:34
 LH:0
 end_of_record
 TN:
-SF:/home/tison/Downloads/rpnc/test/check-rpn.c
+SF:/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/test/check-rpn.c
 FN:13,test_stack
 FN:38,test_rpn
 FN:69,test_rpn_err

@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/tison/Downloads/rpnc/src/rpn.h
+/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/rpn.h
 
-/home/tison/Downloads/rpnc/src/stack.h
+/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.h
 stdio.h
 -
 stdlib.h
 -
 
-/home/tison/Downloads/rpnc/test/check-rpn.c
+/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/test/check-rpn.c
 stdlib.h
 -
 check.h
 -
 ../src/stack.h
-/home/tison/Downloads/rpnc/src/stack.h
+/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/stack.h
 ../src/rpn.h
-/home/tison/Downloads/rpnc/src/rpn.h
+/home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src/rpn.h
 

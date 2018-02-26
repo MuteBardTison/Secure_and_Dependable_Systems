@@ -12,7 +12,7 @@ const int kNumbers_of_element = 100;
 
 START_TEST(test_stack)
 {
-    Stack * s;
+    stack_t * s;
     s = stack_new();
     ck_assert_msg(stack_peek(s) == NULL, NULL);
     ck_assert_msg(stack_pop(s) == NULL, NULL);

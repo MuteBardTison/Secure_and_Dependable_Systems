@@ -12,7 +12,7 @@
 int rpn_eval(char *token[], char **result) {
     const char* operator = "+-*/";
     const char* digits = "0123456789";
-    Stack* s = stack_new();
+    stack_t* s = stack_new();
     int length = 0;
     while(token[length] != NULL) length++;
     for(int i = 0; i < length; i++) {

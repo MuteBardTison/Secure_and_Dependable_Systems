@@ -1,4 +1,4 @@
-# Install script for directory: /home/tison/Downloads/rpnc/src
+# Install script for directory: /home/tison/Downloads/Secure_and_Dependable_Systems-master/rpnc/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -10,13 +10,13 @@ typedef struct _stack {
     void *data;
     int top;
     size_t elemSize;
-}Stack;
+}stack_t;
 /**
  * \brief Create a new empty stack.
  *
  * \return A handle for the new stack.
  */
-Stack*
+stack_t*
 stack_new();
 /**
  * \brief Push data (allocated by the caller) on the stack.
@@ -25,7 +25,7 @@ stack_new();
  * \param data The pointer to data to be pushed on the stack.
  */
 void
-stack_push(Stack *s, void *data);
+stack_push(stack_t *s, void *data);
 /**
  * \brief Pop data from the top of the stack.
  *
@@ -33,7 +33,7 @@ stack_push(Stack *s, void *data);
  * \return The data or NULL if the stack is empty.
  */
 void*
-stack_pop(Stack *s);
+stack_pop(stack_t *s);
 /**
  * \brief Peek on the data at the top of the stack.
  *
@@ -41,7 +41,7 @@ stack_pop(Stack *s);
  * \return The data or NULL if the stack is empty.
  */
 void*
-stack_peek(Stack *s);
+stack_peek(stack_t *s);
 /**
  * \brief Test whether a stack is empty.
  *
@@ -49,12 +49,12 @@ stack_peek(Stack *s);
  * \return A non-zero value if the stack is empty, 0 otherwise.
  */
 int
-stack_empty(Stack *s);
+stack_empty(stack_t *s);
 /**
  * \brief Delete a stack.
  *
  * \param s The stack to delete.
  */
 void
-stack_del(Stack *s);
+stack_del(stack_t *s);
 #endif
