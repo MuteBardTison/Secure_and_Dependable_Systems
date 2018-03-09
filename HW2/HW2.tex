@@ -1,0 +1,173 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{hyperref}
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{ifthen}
+\usepackage{listings}
+% move the asterisk at the right position
+\lstset{basicstyle=\ttfamily,tabsize=4,literate={*}{${}^*{}$}1}
+%\lstset{language=C,basicstyle=\ttfamily}
+\usepackage{moreverb}
+\usepackage{palatino}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{comment}
+\usepackage{verbatim}
+\usepackage{color}
+
+%% pdflatex?
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+\pdffalse % we are not running PDFLaTeX
+\else
+\pdfoutput=1 % we are running PDFLaTeX
+\pdftrue
+\fi
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\parindent=0cm
+\parskip=0cm
+
+\setlength{\columnseprule}{0.4pt}
+\addtolength{\columnsep}{2pt}
+
+\addtolength{\textheight}{5.5cm}
+\addtolength{\topmargin}{-26mm}
+\pagestyle{empty}
+
+%%
+%% Sheet setup
+%% 
+\newcommand{\coursename}{Secure and Dependable Systems}
+\newcommand{\courseno}{CO21-320203}
+ 
+\newcommand{\sheettitle}{Homework}
+\newcommand{\mytitle}{}
+\newcommand{\mytoday}{{March 8th}, 2018}
+
+% Current Assignment number
+\newcounter{assignmentno}
+\setcounter{assignmentno}{2}
+
+% Current Problem number, should always start at 1
+\newcounter{problemno}
+\setcounter{problemno}{1}
+
+%%
+%% problem and bonus environment
+%%
+\newcounter{probcalc}
+\newcommand{\problem}[2]{
+  \pagebreak[2]
+  \setcounter{probcalc}{#2}
+  ~\\
+  {\large \textbf{Problem {\arabic{assignmentno}}.{\arabic{problemno}}} \hspace{0.2cm}\textit{#1}} \refstepcounter{problemno}\vspace{2pt}\\}
+
+\newcommand{\bonus}[2]{
+  \pagebreak[2]
+  \setcounter{probcalc}{#2}
+  ~\\
+  {\large \textbf{Bonus Problem \textcolor{blue}{\arabic{assignmentno}}.\textcolor{blue}{\arabic{problemno}}} \hspace{0.2cm}\textit{#1}} \refstepcounter{problemno}\vspace{2pt}\\}
+
+%% some counters  
+\newcommand{\assignment}{\arabic{assignmentno}}
+
+%% solution  
+\newcommand{\solution}{\pagebreak[2]{\bf Solution:}\\}
+
+%% Hyperref Setup
+\hypersetup{pdftitle={Homework \assignment},
+  pdfsubject={\coursename},
+  pdfauthor={},
+  pdfcreator={},
+  pdfkeywords={Secure and Dependable Systems},
+  %  pdfpagemode={FullScreen},
+  %colorlinks=true,
+  %bookmarks=true,
+  %hyperindex=true,
+  bookmarksopen=false,
+  bookmarksnumbered=true,
+  breaklinks=true,
+  %urlcolor=darkblue
+  urlbordercolor={0 0 0.7}
+}
+
+\begin{document}
+\coursename \hfill Course: \courseno\\
+Jacobs University Bremen \hfill \mytoday\\
+{Zihan Qi}\hfill
+\vspace*{0.3cm}\\
+\begin{center}
+{\Large \sheettitle{} {\assignment}\\}
+\end{center}
+
+\problem{partial correctness of the gcd algorithm}{0}
+\solution{
+$\{X = x \land Y = y \land x > 0 \land y > 0\} $\\
+$WHILE\ Y \ne 0\ DO\ Z := X\ \%\ Y; X := Y; Y := Z;\ OD$\\
+$\{X = gcd(x, y)\}$\\
+
+Find a loop variant P such that:\\
+$\bullet\ \{P \land Y \ne 0\}\ Z := X\ \%\ Y; X := Y; Y := Z\ \{P\}$ \qquad\qquad(While rule)\\
+$\bullet\ X = x \land Y = y \land x > 0 \land y > 0 \to P$\quad\qquad\qquad\qquad\qquad(Precondition strengthening)\\
+$\bullet\ P \land \neg(Y \ne 0) \to X = gcd(x, y)$\ \quad\qquad\qquad\qquad\qquad\qquad(Postcondition weakening)\\
+
+A loop variant $gcd(X, Y) = gcd(x, y)$ is valid since:\\
+$\bullet\ gcd(X, Y) = gcd(x, y) \land Y \ne 0 \to gcd(Y, X\ \%\ Y) = gcd(x, y)$\ \qquad\qquad(Euclid's algorithm)\\
+$\bullet\ \{gcd(Y, X\ \%\ Y) = gcd(x, y)\}\ Z := X\ \%\ Y\ \{gcd(Y, Z) = gcd(x, y)\}$\ \ \ \quad(Assignment axiom)\\
+$\bullet\ \{gcd(Y, Z) = gcd(x, y)\}\ X := Y\ \{gcd(X, Z) = gcd(x, y)\}$\qquad\qquad\qquad(Assignment axiom)\\
+$\bullet\ \{gcd(X, Z) = gcd(x, y)\}\ Y := Z\ \{gcd(X, Y) = gcd(x, y)\}$\qquad\qquad\qquad(Assignment axiom)\\
+Then we have $\{gcd(X, Y) = gcd(x, y)\}\ Z := X\ \%\ Y; X := Y; Y := Z\ \{gcd(X, Y) = gcd(x, y)\}$\\
+
+As well,\\
+$\bullet\ X = x \land Y = y \land x > 0 \land y > 0 \to gcd(X, Y) = gcd(x, y)$, which is trivial.\\
+$\bullet\ gcd(X, Y) = gcd(x, y) \land \neg(Y \ne 0) \to gcd(X, Y) = gcd(x, y) \land Y = 0$\\
+since we assume $\vdash gcd(a, 0) = a$\\
+Then, $gcd(X, Y) = gcd(x, y) \land \neg(Y \ne 0) \to X = gcd(x, y)$\\
+
+Since the loop variant hold before and after the loop terminates, partial correctness of gcd algorithm is proved.\\
+}
+\problem{total correctness of the gcd algorithm}{0}
+\solution{
+$\textbf{Precondition:} \color{blue}{\{X = x \land Y = y \land x > 0 \land y > 0\}}$\\
+$\color{blue}{\{X = x \land Y = y \land x > 0 \land y > 0\}}$\\
+$\textbf{WHILE}\ Y \ne 0\ \textbf{DO}$\\
+$\color{blue}{gcd(X, Y) = gcd(x, y)}$\\
+$\color{blue}{[Y]}$\\
+$Z := X\ \%\ Y$\\
+$X := Y$\\
+$Y := Z$\\
+$\textbf{OD}$\\
+$\textbf{Postcondition:} \color{blue}{\{X = gcd(x, y)\}}$\\
+(Annotations are marked with blue color)\\
+
+$(X = x \land Y = y \land x > 0 \land y > 0) \to (X = x \land Y = y \land x > 0 \land y > 0)$, since we dont have initial statements.\\
+While loop rule gives:\\
+$(X = x \land Y = y \land x > 0 \land y > 0) \to (gcd(X, Y) = gcd(x, y))$\\
+$(gcd(X, Y) = gcd(x, y) \land \neg(Y \ne 0)) \to (X = gcd(x, y))$\\
+$(gcd(X, Y) = gcd(x, y) \land Y \ne 0) \to Y \ge 0$\\
+
+Then the Verification Conditions are generated as follows:\\
+$\{gcd(X, Y) = gcd(x, y) \land Y \ne 0 \land Y = n\}\ Z := X\ \%\ Y; X := Y; Y := Z\ \{gcd(X, Y) = gcd(x, y) \land Y < n\}$\\
+$\{gcd(X, Y) = gcd(x, y) \land Y \ne 0 \land Y = n\}\ Z := X\ \%\ Y; X := Y\ \{gcd(X, Z) = gcd(x, y) \land Z < n\}$\\
+$\{gcd(X, Y) = gcd(x, y) \land Y \ne 0 \land Y = n\}\ Z := X\ \%\ Y\ \{gcd(Y, Z) = gcd(x, y) \land Z < n\}$\\
+$(gcd(X, Y) = gcd(x, y) \land Y \ne 0 \land Y = n) \to (gcd(Y, X\ \%\ Y) = gcd(x, y) \land X\ \%\ Y < n)$\\
+
+Since $Y \ne 0 \land Y = y \land y > 0$,\ then $Y > 0$, and VC is true hence the algorithm terminates. Therefore, total correctness of gcd is proved.\\
+}
+
+\end{document}
