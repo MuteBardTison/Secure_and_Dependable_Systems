@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Tison/Desktop/gcd/src/gcd.c
+gcd.h
+/Users/Tison/Desktop/gcd/src/gcd.h
+
+/Users/Tison/Desktop/gcd/src/gcd.h
+
