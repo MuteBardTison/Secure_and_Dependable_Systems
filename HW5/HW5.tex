@@ -1,0 +1,164 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{hyperref}
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{ifthen}
+\usepackage{listings}
+% move the asterisk at the right position
+\lstset{basicstyle=\ttfamily,tabsize=4,literate={*}{${}^*{}$}1}
+%\lstset{language=C,basicstyle=\ttfamily}
+\usepackage{moreverb}
+\usepackage{palatino}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{comment}
+\usepackage{verbatim}
+\usepackage{color}
+
+%% pdflatex?
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+\pdffalse % we are not running PDFLaTeX
+\else
+\pdfoutput=1 % we are running PDFLaTeX
+\pdftrue
+\fi
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\parindent=0cm
+\parskip=0cm
+
+\setlength{\columnseprule}{0.4pt}
+\addtolength{\columnsep}{2pt}
+
+\addtolength{\textheight}{5.5cm}
+\addtolength{\topmargin}{-26mm}
+\pagestyle{empty}
+
+%%
+%% Sheet setup
+%% 
+\newcommand{\coursename}{Secure and Dependable Systems}
+\newcommand{\courseno}{CO21-320203}
+ 
+\newcommand{\sheettitle}{Homework}
+\newcommand{\mytitle}{}
+\newcommand{\mytoday}{{May 16th}, 2018}
+
+% Current Assignment number
+\newcounter{assignmentno}
+\setcounter{assignmentno}{5}
+
+% Current Problem number, should always start at 1
+\newcounter{problemno}
+\setcounter{problemno}{1}
+
+%%
+%% problem and bonus environment
+%%
+\newcounter{probcalc}
+\newcommand{\problem}[2]{
+  \pagebreak[2]
+  \setcounter{probcalc}{#2}
+  ~\\
+  {\large \textbf{Problem {\arabic{assignmentno}}.{\arabic{problemno}}} \hspace{0.2cm}\textit{#1}} \refstepcounter{problemno}\vspace{2pt}\\}
+
+\newcommand{\bonus}[2]{
+  \pagebreak[2]
+  \setcounter{probcalc}{#2}
+  ~\\
+  {\large \textbf{Bonus Problem \textcolor{blue}{\arabic{assignmentno}}.\textcolor{blue}{\arabic{problemno}}} \hspace{0.2cm}\textit{#1}} \refstepcounter{problemno}\vspace{2pt}\\}
+
+%% some counters  
+\newcommand{\assignment}{\arabic{assignmentno}}
+
+%% solution  
+\newcommand{\solution}{\pagebreak[2]{\bf Solution:}\\}
+
+%% Hyperref Setup
+\hypersetup{pdftitle={Homework \assignment},
+  pdfsubject={\coursename},
+  pdfauthor={},
+  pdfcreator={},
+  pdfkeywords={Secure and Dependable Systems},
+  %pdfpagemode={FullScreen},
+  %colorlinks=true,
+  %bookmarks=true,
+  %hyperindex=true,
+  bookmarksopen=false,
+  bookmarksnumbered=true,
+  breaklinks=true,
+  %urlcolor=darkblue
+  urlbordercolor={0 0 0.7}
+}
+
+\begin{document}
+\coursename \hfill Course: \courseno\\
+Jacobs University Bremen \hfill \mytoday\\
+{Zihan Qi}\hfill
+\vspace*{0.3cm}\\
+\begin{center}
+{\Large \sheettitle{} {\assignment}\\}
+\end{center}
+
+\problem{Pretty Good Privacy (PGP)}{0}
+\solution{
+(a)
+Matriculation number: 30000612\\
+30000612 + 663890472 = 693891084\\\\
+(b)
+A key revocation certificate is a special, revoked copy of your public key. You can generate a key revocation certificate and store it for future use. Key revocation certificates are especially useful if you've forgotten the passphrase to your private key and you need some way to "disable" or revoke that key. Since you've forgotten the passphrase or lost the private key, the only way to revoke the key will be with a revocation certificate that you generated earlier (when you still remembered the passphrase and had the private key). In a way, a key revocation certificate is a kind of insurance plan that lets you keep ultimate control over your key, even if you lose the private key or forget the passphrase.\\
+(Reference: http://www.spywarewarrior.com/uiuc/ss/revoke/pgp-revoke.htm)
+}
+
+\problem{X.509 Certificates}{0}
+\solution{
+(a)
+Generate a RSA public/private key pair:\\
+\$ openssl genpkey -algorithm RSA -out private\_key.pem -pkeyopt rsa\_keygen\_bits:2048\\\\
+Size used: 2048 bits\\
+Extract the public key into a separate file:\\
+\$ openssl rsa -pubout -in private\_key.pem -out public\_key.pem\\
+This command extract public\_key file to current working directory.\\\\
+(b)
+Generate a Certificate Signing Request (CSR) for the RSA public/private key pair:(-sha256 is optional)\\
+\$ openssl req -new -sha256 -inform PEM -in private\_key.pem -out private\_key.csr\\\\
+Show the content of the CSR:\\
+\$ openssl req -text -noout -verify -in private\_key.csr\\\\
+(c)
+Generate a self signed certificate for the CA:\\
+OpenSSL uses the information you specify to compile a X.509 certificate using the information prompted to the user, the public key that is extracted from the specified private key which is also used to generate the signature.\\\\
+First, we generate a key:\\
+\$ openssl genrsa -out ca.key 2048\\
+Then generate a self signed certificate for the CA:\\
+\$ openssl req -new -x509 -key ca.key -out ca.crt\\\\
+(d)
+Sign a CSR with CA:\\
+\$ openssl x509 -req -in private\_key.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out out.crt\\
+}
+
+\problem{TLS and Certificate Validation}{0}
+\solution{
+(a)
+The entire HTML document that that URL holds is returned. If execute \$ curl -v URL, the information also includes TLS handshake procedure and Server Certificate and more info.\\
+(b)
+By comparison, for www.jacobs-university.de and cnds.eecs.jacobs-university.de, the differences are:\\
+HTTP Server Header: nginx ; Apache/2.4.25 (Debian)\\
+SSL certificate key length: 4096 ; 2048\\
+Also, except obvious differences like Subject names, cnds.eecs.jacobs-university.de support TLS 1.2, TLS 1.1, TLS 1.0, where the other one only support TLS 1.2, TLS 1.1 protocols. Also, the ciphers supported by the server are different.
+}
+\end{document}
